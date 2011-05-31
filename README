@@ -1,18 +1,20 @@
 JDWM is DWM 5.8.2 with popular community patches already applied.
 http://dwm.suckless.org/
 
-This is basically just a copy of my own DWM setup on my Arch Linux desktop.
-PKGBUILD and all.
+License information can be found in the dwm-5.8.2.tar.gz and in src/dwm-5.8.2/LICENSE.
+I take no credit for writing any of this. All that I have done is put it all together and maybe changed a few lines of code to get things to play nicely.
 
+
+== WHAT IS JDWM?
+This is basically just a copy of my own DWM setup on my Arch Linux desktop: PKGBUILD and all. Perfect for Arch users who want a to get DWM setup with a bunch of the popular community patches.
+I personally use a font that I've created called ProFontSymbols that is ProFont but altered so that a few useless unicode characters are now copies of popular .xbm icons used with dzen2.
+Basically, it cheats and gives you icons in the DWM statusbar.
+https://github.com/JimmyZelinskie/ProFontSymbols 
+
+== HOW DOES I JDWM?
 Edit the config.h in the main directory because the PKGBUILD script copies that one over top of the config.h in the src dir.
 
-You'll also notice I have left in examples of my custom hotkeys and font.
-The font can be found at https://github.com/JimmyZelinskie/ProFontSymbols
-
-With the application of pango and this font, you are able to achieve unicode characters of other languages and still use the ProFont font with custom glyphs to use in the DWM statusbar.
-
+== WHAT PATCHES ARE USED?
 For more info on the patches used check out:
 http://dwm.suckless.org/patches/
 https://bbs.archlinux.org/viewtopic.php?id=92895
-
-I take no credit for writing any of this. All that I have done is put it all together and maybe changed a few lines of code to get things to play nicely.
