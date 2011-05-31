@@ -15,6 +15,14 @@ https://github.com/JimmyZelinskie/ProFontSymbols
 Edit the config.h in the main directory because the PKGBUILD script copies that one over top of the config.h in the src dir.
 
 == WHAT PATCHES ARE USED?
+Currently, the following patches are used:
+-cycle.c
+-dwm-5.8.2-bstack-alt.diff
+-dwm-5.8.2-fibonacci.diff
+-dwm-5.8.2-pertag.diff
+-dwm-5.8-pango.patch
+-dwm-uselessgap-5.8.diff
+
 For more info on the patches used check out:
-http://dwm.suckless.org/patches/
-https://bbs.archlinux.org/viewtopic.php?id=92895
+-http://dwm.suckless.org/patches/
+-https://bbs.archlinux.org/viewtopic.php?id=92895

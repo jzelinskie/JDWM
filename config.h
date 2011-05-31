@@ -15,9 +15,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-/* static const char *tags[] = { "term", "web", "im", "media", "dl", "vm", "work", "misc", "tray" }; */
-/* static const char *tags[] = { "端末", "純", "話", "メディア", "急流", "仮想", "仕事", "その他", "トレイ" }; */
-static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 
@@ -25,27 +23,13 @@ static const Rule rules[] = {
 	/* class                               instance      title       tags mask     isfloating   monitor */
 
         { "MPlayer",	        	   NULL,       NULL,       0,                 True,        -1 },
-        { "Namoroka",                      NULL,       NULL,       1 << 1,            False,       -1 },
 	{ "Firefox",                       NULL,       NULL,       1 << 1,            False,       -1 },
-	{ "Minefield",                     NULL,       NULL,       1 << 1,            False,       -1 },
-        { "Ts3client_linux_amd64",         NULL,       NULL,       1 << 2,            True,        -1 },
-        { "Mangler",                       NULL,       NULL,       1 << 2,            True,        -1 },
         { "Mumble",                        NULL,       NULL,       1 << 2,            True,        -1 },
         { "Xchat",                         NULL,       NULL,       1 << 2,            True,        -1 },
-	{ "Skype",                         NULL,       NULL,       1 << 2,            True,        -1 },
-        { "Pidgin",                        NULL,       NULL,       1 << 2,            True,        -1 },
-        { "Empathy",                       NULL,       NULL,       1 << 2,            True,        -1 },
         { "Sonata",                        NULL,       NULL,       1 << 3,            True,        -1 },
         { "Deluge",                        NULL,       NULL,       1 << 4,            False,       -1 },
         { "Filezilla",                     NULL,       NULL,	   1 << 4,            False,       -1 },
-        { "Wine",		           NULL,       NULL,       1 << 5,            True,        -1 },
-        { "VirtualBox",                    NULL,       NULL,       1 << 5,            False,       -1 },
         { "LibreOffice",                   NULL,       NULL,       1 << 6,            False,       -1 },
-        { "Gimp",                          NULL,       NULL,       1 << 7,            True,        -1 },
-	{ "Gnormalize",                    NULL,       NULL,       1 << 7,            True,        -1 },
-        { "trayer",		           NULL,       NULL,       1 << 8,            True,        -1 },
-       	{ "stalonetray",	           NULL,       NULL,       1 << 8,            True,        -1 },
-	{ "Pavucontrol",                   NULL,       NULL,       1 << 8,            False,       -1 },
 
 };
 
@@ -55,13 +39,13 @@ static const Bool resizehints = False; /* True means respect size hints in tiled
 static const Layout layouts[] = {
 
         /* symbol     arrange function */
-	{ "",      tile },    /* first entry is default */
-	{ "",      NULL },    /* no layout function means floating behavior */
-	{ "",      monocle },
-	{ "¼",         bstack },
-	{ "½",         bstackhoriz },
-	{ "¾",         spiral },
-	{ "",      dwindle },
+	{ "[T]",      tile },    /* first entry is default */
+	{ "[F]",      NULL },    /* no layout function means floating behavior */
+	{ "[M]",      monocle },
+	{ "[B]",         bstack },
+	{ "[H]",         bstackhoriz },
+	{ "[S]",         spiral },
+	{ "[D]",      dwindle },
 
 };
 
@@ -80,7 +64,6 @@ static const Layout layouts[] = {
 static const char *dmenucmd[]  = { "dmenu_run", "-fn", "-*-proggytinyttsz-*-*-*-*-16-*-*-*-*-*-*-*", "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]   = { "urxvt", NULL };
 static const char *runcmd[]    = { "gmrun", NULL };
-static const char *deskshot[]  = { "deskscrot", NULL };
 static const char *volupcmd[]  = { "mpc", "volume", "+1", NULL };
 static const char *voldncmd[]  = { "mpc", "volume", "-1", NULL };
 static const char *mpcnext[]   = { "mpc", "next", NULL };
@@ -126,7 +109,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
         { MODKEY|ShiftMask,             XK_p,      spawn,          {.v = runcmd } },
-        { NULL,                         XK_Print,  spawn,          {.v = deskshot } },
         { MODKEY,                       XK_Left,   cycle,          {.i = -1 } },
         { MODKEY,                       XK_Right,  cycle,          {.i = +1 } },
 	{ MODKEY, 	                XK_Up,     spawn,          {.v = volupcmd } },
