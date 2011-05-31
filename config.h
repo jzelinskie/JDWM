@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[] = "ProFontSymbol 10";
+static const char font[] = "Sans 10";
 static const char normbordercolor[] = "#242424";
 static const char normbgcolor[]     = "#0d0d0d";
 static const char normfgcolor[]     = "#ffffff";
 static const char selbordercolor[]  = "#242424";
 static const char selbgcolor[]      = "#0d0d0d";
-static const char selfgcolor[]      = "#c5f779"; /* #94e1cd newgreen, #80cea6 green, #00aac3 blue */
+static const char selfgcolor[]      = "#c5f779";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 2;
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -42,9 +42,9 @@ static const Layout layouts[] = {
 	{ "[T]",      tile },    /* first entry is default */
 	{ "[F]",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
-	{ "[B]",         bstack },
-	{ "[H]",         bstackhoriz },
-	{ "[S]",         spiral },
+	{ "[B]",      bstack },
+	{ "[H]",      bstackhoriz },
+	{ "[S]",      spiral },
 	{ "[D]",      dwindle },
 
 };
