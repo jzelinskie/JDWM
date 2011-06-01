@@ -12,7 +12,7 @@ Basically, it cheats and gives you icons in the DWM statusbar.
 https://github.com/JimmyZelinskie/ProFontSymbols 
 
 == HOW DOES I JDWM?
-Edit the config.h in the main directory because the PKGBUILD script copies that one over top of the config.h in the src dir.
+Edit the config.h in the main directory because the PKGBUILD script copies that one over top of the config.h in the src dir. I left the default config.h a little used, so you can get an little more of idea what you can do with it (you could always check config.def.h also).
 
 == WHAT PATCHES ARE USED?
 Currently, the following patches are used:
