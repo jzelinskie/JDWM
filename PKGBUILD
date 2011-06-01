@@ -13,12 +13,6 @@ license=('MIT')
 options=(zipman)
 depends=('libx11' 'libxinerama')
 install=dwm.install
-source=(http://dl.suckless.org/dwm/dwm-$pkgver.tar.gz \
-	config.h
-	dwm.desktop)
-md5sums=('f0b422bfeaa812d66c6dd15c3cc92a6b'
-         'f0ba59bf77a53e3a2fc8596740ee5cb8'
-         '939f403a71b6e85261d09fc3412269ee')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
@@ -36,7 +30,4 @@ build() {
   install -m644 -D README $pkgdir/usr/share/doc/$pkgname/README && \
   install -m644 -D $srcdir/dwm.desktop $pkgdir//etc/X11/sessions/dwm.desktop
 }
-md5sums=('f0b422bfeaa812d66c6dd15c3cc92a6b'
-         'e9404e6ef2f2386782c2cbd7cfa277de'
-         '939f403a71b6e85261d09fc3412269ee')
 
