@@ -7,8 +7,7 @@ I take no credit for writing any of this. All that I have done is put it all tog
 
 ## WHAT IS JDWM?
 JDWM is simply how I use DWM. Currently, it's a just a messy upload of my DWM build directory so that others can easily pick up a version of DWM with a few popular community patches. It's set up so that anybody running the Arch Linux GNU/Linux distribution and get everything they need right away.
-If you want to know more about how I use DWM, check out my website:
-http://jzelinskie.com
+If you want to know more about how I use DWM, check out [my website](http://jzelinskie.com)
 
 ## HOW DOES I JDWM?
 It's the same as normal DWM, but with more options from patches. The installation script in the PKGBUILD copies the config.h from the root directory into the source directory, so edit that one unless you change things or are using a distribution besides Arch Linux.
@@ -25,5 +24,6 @@ Currently, the following patches are pre-applied:
 * dwm-uselessgap-5.8.diff
 
 For more information on the patches check out:
+
 * http://dwm.suckless.org/patches
 * https://bbs.archlinux.org/viewtopic.php?id=92895
