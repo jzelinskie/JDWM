@@ -1,5 +1,6 @@
 # JDWM 5.8.2
 https://github.com/JimmyZelinskie/JDWM
+
 http://dwm.suckless.org
 
 License information can be found in the dwm-5.8.2.tar.gz and in src/dwm-5.8.2/LICENSE.
