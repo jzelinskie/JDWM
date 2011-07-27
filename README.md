@@ -1,6 +1,6 @@
 # JDWM 5.8.2
-https://github.com/JimmyZelinskie/JDWM
-http://dwm.suckless.org
+* https://github.com/JimmyZelinskie/JDWM
+* http://dwm.suckless.org
 
 License information can be found in the dwm-5.8.2.tar.gz and in src/dwm-5.8.2/LICENSE.
 I take no credit for writing any of this. All that I have done is put it all together and maybe changed a few lines of code to get things to play nicely.
@@ -16,6 +16,7 @@ I tried to make the config.h fairly generic, while also showing off some things 
 
 ## WHAT PATCHES ARE IN JDWM?
 Currently, the following patches are pre-applied:
+
 * cycle.c
 * dwm-5.8.2-bstack-alt.diff
 * dwm-5.8.2-fibonacci.diff
@@ -24,6 +25,5 @@ Currently, the following patches are pre-applied:
 * dwm-uselessgap-5.8.diff
 
 For more information on the patches check out:
-
-http://dwm.suckless.org/patches
-https://bbs.archlinux.org/viewtopic.php?id=92895
+* http://dwm.suckless.org/patches
+* https://bbs.archlinux.org/viewtopic.php?id=92895
